@@ -7,6 +7,12 @@ document.getElementById('imageUploader').addEventListener('change', function(eve
     }
 });
 
+
+window.onload = function() {
+    document.getElementById('displayArea').innerText = "Generated ASCII Art will be shown here.";
+    document.getElementById('displayArea').style.fontSize = "large";
+}
+
 document.getElementById('convertToTensor').addEventListener('click', function() {
 
 
@@ -25,9 +31,10 @@ document.getElementById('convertToTensor').addEventListener('click', function() 
         return;
     }
 
-    document.getElementById('displayArea').innerText = 'Loading...';
+    document.getElementById('displayArea').innerText = "Generating....";
+    document.getElementById('displayArea').style.fontSize = "large";
     
-    
+    setTimeout(() => {
     // STEP1. Get image tensor from uploaded image: (width, height, 3)
     imageTensor = getTensorFromImage(imageElement);
 
@@ -35,7 +42,7 @@ document.getElementById('convertToTensor').addEventListener('click', function() 
     gray_tensor = rgbToGrayscale(imageTensor);
 
 
-    const iterations=10;
+    const iterations=5;
     const width = gray_tensor.shape[0];
     const height = gray_tensor.shape[1];
     const num_of_elements = width * height;
@@ -94,6 +101,10 @@ document.getElementById('convertToTensor').addEventListener('click', function() 
     final_string = constructFinalString(centroid_dict_res, width, height);
 
     document.getElementById('displayArea').innerText = final_string;
+    document.getElementById('displayArea').style.fontSize = "x-small";
+
+    }, 0)
+    
             
 });
 
