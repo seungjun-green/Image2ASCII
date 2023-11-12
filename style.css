@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#imageUploader {
+    margin-top: 20px;
+}
+
+#preview {
+    max-width: 500px;
+    max-height: 500px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+/*    margin: 10px 0;*/
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#displayArea {
+    display: block;
+    font-size: 9px;
+    font-family: 'Courier New', monospace;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    overflow-x: auto;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically (optional) */
+    min-height: 100px; /* Set a minimum height */
+    width: 550px; /* Set a minimum height */
+    margin-left: auto;
+    margin-right: auto; /* Center the box itself */
+}
+
+
+
+.item {
+    border: 1px solid black; /* Just for visual distinction, adjust as needed */
+    padding: 10px;
+} 
