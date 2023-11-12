@@ -23,6 +23,8 @@ Generated ASCII Art:
 #### Example 2
 
 Original Image: 
+
+
 ![dog1](https://github.com/seungjun-green/Image2ASCII/assets/60959924/368e02f9-0181-4a71-a060-6e507d4376fd)
 
 
