@@ -11,7 +11,9 @@ This web app converts any uploaded image into an ASCII Art.
 
 Original Image:
 
-![mona_lisa](https://github.com/seungjun-green/Image2ASCII/assets/60959924/478f66bf-f82c-4c6a-9487-02bc3ab878d5| width=100)
+![mona_lisa](https://github.com/seungjun-green/Image2ASCII/assets/60959924/478f66bf-f82c-4c6a-9487-02bc3ab878d5)
+
+<img src="https://github.com/seungjun-green/Image2ASCII/assets/60959924/478f66bf-f82c-4c6a-9487-02bc3ab878d5" width="100">
 
 Generated ASCII Art:
 
