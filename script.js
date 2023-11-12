@@ -101,7 +101,9 @@ document.getElementById('convertToTensor').addEventListener('click', function() 
     final_string = constructFinalString(centroid_dict_res, width, height);
 
     document.getElementById('displayArea').innerText = final_string;
-    if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 500) {
+        document.getElementById('displayArea').style.fontSize = '1px';
+    } else if (window.innerWidth <= 768) {
         document.getElementById('displayArea').style.fontSize = '6px';
     } else {
         // Set font size for non-mobile devices
