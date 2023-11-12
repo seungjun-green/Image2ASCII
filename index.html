@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ASCII Art Converter</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>ASCII Art Converter</h1>
+    <div>
+        <div id="groupA">
+            
+            <input type="file" id="imageUploader" accept="image/*" />
+            <img id="preview" src="" alt="Image preview" style="display: none;" />
+        </div>
+        
+        <button id="convertToTensor" class="col-">Convert to ASCII</button>
+        <div id="displayArea" class="col-"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</body>
+</html>
