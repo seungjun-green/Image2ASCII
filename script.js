@@ -101,10 +101,10 @@ document.getElementById('convertToTensor').addEventListener('click', function() 
     final_string = constructFinalString(centroid_dict_res, width, height);
 
     document.getElementById('displayArea').innerText = final_string;
-    if (window.innerWidth <= 500) {
-        document.getElementById('displayArea').style.fontSize = '1px';
+    if (window.innerWidth <= 300) {
+        document.getElementById('displayArea').style.fontSize = '2px';
     } else if (window.innerWidth <= 768) {
-        document.getElementById('displayArea').style.fontSize = '6px';
+        document.getElementById('displayArea').style.fontSize = '7px';
     } else {
         // Set font size for non-mobile devices
         document.getElementById('displayArea').style.fontSize = "x-small";
