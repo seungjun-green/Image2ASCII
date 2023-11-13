@@ -102,7 +102,7 @@ document.getElementById('convertToTensor').addEventListener('click', function() 
 
     document.getElementById('displayArea').innerText = final_string;
     if (window.innerWidth <= 300) {
-        document.getElementById('displayArea').style.fontSize = '1%';
+        document.getElementById('displayArea').style.fontSize = '3px';
     } else if (window.innerWidth <= 768) {
         document.getElementById('displayArea').style.fontSize = '7px';
     } else {
@@ -110,7 +110,6 @@ document.getElementById('convertToTensor').addEventListener('click', function() 
         document.getElementById('displayArea').style.fontSize = "x-small";
     }
     
-
     }, 0)
     
             
