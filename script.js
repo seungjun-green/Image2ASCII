@@ -102,7 +102,7 @@ document.getElementById('convertToTensor').addEventListener('click', function() 
 
     document.getElementById('displayArea').innerText = final_string;
     if (window.screen.width <= 500) {
-        document.getElementById('displayArea').style.fontSize = '3px';
+        document.getElementById('displayArea').style.fontSize = '1.5px';
     } else if (window.screen.width <= 768) {
         document.getElementById('displayArea').style.fontSize = '7px';
     } else {
