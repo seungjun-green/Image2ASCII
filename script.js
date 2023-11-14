@@ -11,7 +11,6 @@ document.getElementById('imageUploader').addEventListener('change', function(eve
 window.onload = function() {
     document.getElementById('displayArea').innerText = "Generated ASCII Art will be shown here.";
     document.getElementById('displayArea').style.fontSize = "large";
-    document.getElementById('windowSize').innerText = window.screen.width;
 }
 
 document.getElementById('convertToTensor').addEventListener('click', function() {
@@ -102,9 +101,9 @@ document.getElementById('convertToTensor').addEventListener('click', function() 
     final_string = constructFinalString(centroid_dict_res, width, height);
 
     document.getElementById('displayArea').innerText = final_string;
-    if (window.innerWidth <= 300) {
+    if (window.screen.width <= 500) {
         document.getElementById('displayArea').style.fontSize = '3px';
-    } else if (window.innerWidth <= 768) {
+    } else if (window.screen.width <= 768) {
         document.getElementById('displayArea').style.fontSize = '7px';
     } else {
         // Set font size for non-mobile devices
