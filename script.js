@@ -11,7 +11,7 @@ document.getElementById('imageUploader').addEventListener('change', function(eve
 window.onload = function() {
     document.getElementById('displayArea').innerText = "Generated ASCII Art will be shown here.";
     document.getElementById('displayArea').style.fontSize = "large";
-    document.getElementById('windowSize').innerText = window.innerWidth;
+    document.getElementById('windowSize').innerText = window.visualViewport.width;
 }
 
 document.getElementById('convertToTensor').addEventListener('click', function() {
